@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -12,8 +13,9 @@
 </head>
 <body>
     <!--Шапка-->
-    <header>
-        <a class="logo" href="./"><span>Web</span>Studio</a>
+    <header class="section header">
+        <div class="container nav">
+            <a class="logo" href="./"><span>Web</span>Studio</a>
         <nav>
             <ul class="nav-list">
                 <li class="nav-item">
@@ -35,16 +37,20 @@
                 <a class="contact-link" href="">+38 096 111 11 11</a>
             </li>
         </ul>
+        </div>
     </header>
     <main>
         <!--Секція герой-->
-        <section class="section">
-            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <section class="section hero">
+            <div class="container">
+                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
             <button class="hero-button" type="button">Замовити послугу</button>
+            </div>
         </section>
         <!--Особливості-->
-        <section>
-            <h2>Особливості</h2>
+        <section class="section">
+            <div class="container">
+                <h2>Особливості</h2>
             <ul>
                <li>
                 <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -63,42 +69,58 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus eum nostrum beatae magnam similique quibusdam, quasi atque, quo ea modi distinctio aspernatur voluptatum, dignissimos rem reprehenderit dolor earum culpa? Consectetur?</p>
             </li>
             </ul>
+            </div>
         </section>
         <!--Чим ми займаємося-->
-        <section>
-            <h2>Чим ми займаємося</h2>
+        <section class="section">
+            <div class="container">
+                <h2>Чим ми займаємося</h2>
             <ul>
                 <li>
-                    <img src="./img/img (1).jpg" alt="робочий стіл">
+                    <img src="./img/img (19).jpg" alt="робочий стіл">
                 </li>
                 <li>
-                    <img src="./img/img (2).jpg" alt="робочий стіл">
+                    <img src="./img/img (20).jpg" alt="робочий стіл">
                 </li>
                 <li>
-                    <img src="./img/img.jpg" alt="робочий стіл">
+                    <img src="/img/img (21).jpg" alt="робочий стіл">
                 </li>
             </ul>
+            </div>
         </section>
         <!--Наша команда-->
-        <section>
-            <h2>Наша команда</h2>
+        <section class="section">
+            <div class="container">
+                <h2>Наша команда</h2>
             <ul>
                 <li>
-                    <img src="./img/img (4).jpg" alt="Микола Тарасов">
+                    <img src="img/img (15).jpg" alt="Ігор Дем’яненко">
+                    <p>Ігор Дем’яненко</p>
+                    <p>Product Designer</p>
+                </li>
+                <li>
+                    <img src="./img/img (16).jpg" alt="Ольга Репіна">
+                    <p>Ольга Репіна</p>
+                    <p>Frontend Developer</p>
+                </li>
+                <li>
+                    <img src="./img/img (17).jpg" alt="Микола Тарасов">
                     <p>Микола Тарасов</p>
                     <p>Marketing</p>
                 </li>
                 <li>
-                    <img src="./img/img (5).jpg" alt="Михайло Єрмаков">
+                    <img src="./img/img (18).jpg" alt="Михайло Єрмаков">
                     <p>Михайло Єрмаков</p>
                     <p>UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <!--підвал(футер)-->
-    <footer>
-        <a href="./"><span>Web</span>Studio</a>
+    <footer class="section footer">
+        <div class="container">
+            <a href="./"><span>Web</span>Studio</a>
         <address>м. Київ, пр-т Лесі Українки, 26</address>
         <ul>
             <li>
@@ -108,6 +130,7 @@
                 <a href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
+        </div>
     </footer>
 </body>
 </html>

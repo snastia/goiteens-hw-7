@@ -15,13 +15,52 @@ body{
     font-family: "Roboto", sans-serif;
     color: var(--primary-text-color);
 }
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+p,
+ul{
+    margin: 0;
+    padding: 0;
+}
 a{
+    padding: 0;
+    margin: 0;
+    color: var(--primary-text-color);
     text-decoration: none;
 }
 ul{
     list-style: none;
 }
 /* головна сторінка */
+.section{
+    width: 1600px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    outline: 1px solid black;
+}
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid red;
+}
+/* хедер */
+.section.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.container.nav{
+    display: flex;
+    align-items: center;
+}
 .logo{
     font-family: 'Raleway';
  font-style: normal;
@@ -34,6 +73,18 @@ ul{
 }
 .logo span{
  color: var(--accent-color);
+}
+
+nav{
+    margin-left: 93px;
+}
+
+.nav-list{
+display: flex;
+}
+
+.nav-item:not(:first-child){
+margin-left: 54px;
 }
 .nav-link
 .contact-link{
@@ -52,12 +103,23 @@ color: var(--primary-text-color);
 .contact-link:focus{
     color: var(--accent-color);
 }
+.contacts-list{
+display: flex;
+margin-left: auto;
+}
+.contact-item:not(:first-child){
+    margin-left: 50px;
+}
 .contact-link{
     color: var(--secondary-text-color);
 }
-
-/* секція герой */
-.section{
+ /* секція герой */
+.section.hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.section.hero,
+.footer{
     background-color: var(--background-color)
 }
 .hero-title{
@@ -72,5 +134,9 @@ text-transform: uppercase;
 color: var(--thirdly-text-color);
 
 }
-
+/* футер */
+.section.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 /* портфоліо */
